@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useLanguage } from '../LanguageContext';
+import './Weather.css'; // Importa el archivo CSS del Weather
 
 function Weather({ city }) {
   const { language } = useLanguage();
@@ -20,13 +21,18 @@ function Weather({ city }) {
 
   if (!weatherData) return <div>Loading...</div>;
 
+  // Redondear la temperatura a un número entero
+  const temp = Math.floor(weatherData.main.temp);
+  const tempMin = Math.floor(weatherData.main.temp_min);
+  const tempMax = Math.floor(weatherData.main.temp_max);
+
   return (
-    <div>
+    <div className="weather-container">
       <h2>Weather in {weatherData.name}</h2>
-      <p>Temperature: {weatherData.main.temp}°C</p>
-      <p>Min Temperature: {weatherData.main.temp_min}°C</p>
-      <p>Max Temperature: {weatherData.main.temp_max}°C</p>
-      <p>Description: {weatherData.weather[0].description}</p>
+      <p className="temperature">Temperature: {temp}°C</p>
+      <p>Min Temperature: {tempMin}°C</p>
+      <p>Max Temperature: {tempMax}°C</p>
+      <p className="description">Description: {weatherData.weather[0].description}</p>
       <img src={`http://openweathermap.org/img/wn/${weatherData.weather[0].icon}.png`} alt={weatherData.weather[0].description} />
     </div>
   );
