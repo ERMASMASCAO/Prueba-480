@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './ContactForm.css'; // Importar el archivo CSS
 
 function ContactForm() {
   const [formData, setFormData] = useState({
@@ -18,7 +19,7 @@ function ContactForm() {
   };
 
   return (
-    <div>
+    <div className="contact-form-container">
       <h2>Contact Form</h2>
       <form>
         <label>
