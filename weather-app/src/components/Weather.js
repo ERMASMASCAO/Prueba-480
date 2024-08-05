@@ -8,7 +8,7 @@ function Weather({ city }) {
 
   useEffect(() => {
     if (city) {
-      axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=YOUR_API_KEY&lang=${language}`)
+      axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${process.env.REACT_APP_OPENWEATHER_API_KEY}&lang=${language}`)
         .then(response => {
           setWeatherData(response.data);
         })
