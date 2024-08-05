@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Sidebar from './components/Sidebar';
+import Weather from './components/Weather';
+import ContactForm from './components/ContactForm';
 
 function App() {
+  const [city, setCity] = useState('London');
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div style={{ display: 'flex' }}>
+        <Sidebar setCity={setCity} />
+        <div style={{ marginLeft: '220px', padding: '20px' }}>
+          <Routes>
+            <Route path="/" element={<Weather city={city} />} />
+            <Route path="/contact" element={<ContactForm />} />
+          </Routes>
+        </div>
+      </div>
+    </Router>
   );
 }
 
