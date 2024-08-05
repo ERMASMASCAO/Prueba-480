@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLanguage } from '../LanguageContext';
 import { Link } from 'react-router-dom';
+import './Sidebar.css'; // Importa el archivo CSS
 
 function Sidebar({ setCity }) {
   const { language, setLanguage } = useLanguage();
@@ -10,17 +11,17 @@ function Sidebar({ setCity }) {
   };
 
   return (
-    <div style={styles.sidebar}>
-      <div style={styles.languageSelector}>
+    <div className="sidebar">
+      <div className="language-selector">
         <button
           onClick={() => handleLanguageChange('en')}
-          style={language === 'en' ? styles.selectedLanguage : styles.language}
+          className={language === 'en' ? 'selected-language' : 'language'}
         >
           English
         </button>
         <button
           onClick={() => handleLanguageChange('es')}
-          style={language === 'es' ? styles.selectedLanguage : styles.language}
+          className={language === 'es' ? 'selected-language' : 'language'}
         >
           Español
         </button>
@@ -35,39 +36,5 @@ function Sidebar({ setCity }) {
     </div>
   );
 }
-
-const styles = {
-  sidebar: {
-    position: 'fixed',
-    top: 0,
-    right: 0,
-    width: '200px',
-    padding: '10px',
-    borderLeft: '1px solid #ddd',
-    backgroundColor: '#f9f9f9',
-  },
-  languageSelector: {
-    display: 'flex',
-    justifyContent: 'flex-end',
-    marginBottom: '10px',
-  },
-  language: {
-    margin: '0 5px',
-    padding: '5px 10px',
-    border: '1px solid #ccc',
-    borderRadius: '4px',
-    backgroundColor: '#fff',
-    cursor: 'pointer',
-  },
-  selectedLanguage: {
-    margin: '0 5px',
-    padding: '5px 10px',
-    border: '1px solid #007bff',
-    borderRadius: '4px',
-    backgroundColor: '#007bff',
-    color: '#fff',
-    cursor: 'pointer',
-  },
-};
 
 export default Sidebar;
