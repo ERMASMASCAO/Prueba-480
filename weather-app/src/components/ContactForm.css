@@ -1,61 +1,66 @@
+/* File: ContactForm.css */
 
-
-/* Archivo: ContactForm.css */
-
+/* Container for the contact form */
 .contact-form-container {
-    max-width: 500px; /* Limitar el ancho máximo del formulario */
-    margin: 20px auto; /* Centrar el formulario horizontalmente */
-    padding: 20px;
-    border: 2px solid #000; /* Borde negro alrededor del formulario */
-    border-radius: 8px; /* Bordes redondeados */
-    background-color: #f9f9f9; /* Color de fondo similar al sidebar */
+    max-width: 500px; /* Limit the maximum width of the form */
+    margin: 20px auto; /* Center the form horizontally */
+    padding: 20px; /* Add padding inside the form */
+    border: 2px solid #000; /* Black border around the form */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f9f9f9; /* Background color similar to the sidebar */
 }
 
+/* Styling for the form's title (h2 element) */
 .contact-form-container h2 {
-    margin-bottom: 20px;
-    text-align: center; /* Centrar el título */
-    font-size: 24px; /* Tamaño de fuente más grande para el título */
+    margin-bottom: 20px; /* Space below the title */
+    text-align: center; /* Center the title text */
+    font-size: 24px; /* Larger font size for the title */
 }
 
+/* Styling for the form labels */
 .contact-form-container label {
-    display: block; /* Mostrar las etiquetas como bloques */
-    margin-bottom: 10px; /* Espacio entre la etiqueta y el campo */
-    font-size: 16px;
-    font-weight: bold; /* Hacer las etiquetas más destacadas */
+    display: block; /* Display labels as blocks */
+    margin-bottom: 10px; /* Space between the label and the input field */
+    font-size: 16px; /* Font size for the labels */
+    font-weight: bold; /* Make labels bold to stand out */
 }
 
+/* Styling for the input fields */
 .contact-form-container input {
-    width: 100%; /* Hacer que los campos de entrada ocupen todo el ancho */
-    padding: 10px; /* Espacio dentro de los campos de entrada */
-    border: 2px solid #000; /* Borde negro para los campos de entrada */
-    border-radius: 4px; /* Bordes redondeados */
-    box-sizing: border-box; /* Incluir el borde y el relleno en el tamaño total del campo */
-    font-size: 16px; /* Tamaño de fuente consistente */
-    margin-top: 5px; /* Espacio entre la etiqueta y el campo de entrada */
-    background-color: #fff; /* Color de fondo blanco para los campos de entrada */
+    width: 100%; /* Make input fields take up the full width */
+    padding: 10px; /* Add padding inside the input fields */
+    border: 2px solid #000; /* Black border for the input fields */
+    border-radius: 4px; /* Rounded corners for input fields */
+    box-sizing: border-box; /* Include border and padding in the total size of the input field */
+    font-size: 16px; /* Consistent font size for input fields */
+    margin-top: 5px; /* Space between the label and the input field */
+    background-color: #fff; /* White background color for input fields */
 }
 
+/* Styling for input fields when focused */
 .contact-form-container input:focus {
-    border-color: #007bff; /* Cambiar el color del borde al enfocar */
-    outline: none; /* Eliminar el contorno predeterminado del navegador */
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Agregar sombra de enfoque */
+    border-color: #007bff; /* Change border color when focused */
+    outline: none; /* Remove the default browser outline */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a shadow effect when focused */
 }
 
+/* Styling for the submit button */
 .contact-form-container button {
-    display: block; /* Hacer que el botón ocupe todo el ancho */
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    border: 2px solid #000; /* Borde negro para el botón */
-    border-radius: 4px; /* Bordes redondeados */
-    background-color: #007bff; /* Color de fondo del botón */
-    color: #fff; /* Color del texto del botón */
-    font-size: 16px; /* Tamaño de fuente consistente */
-    cursor: pointer; /* Mostrar cursor de puntero al pasar sobre el botón */
-    transition: background-color 0.3s, border-color 0.3s; /* Transición suave para el hover */
+    display: block; /* Make the button take up the full width */
+    width: 100%; /* Ensure the button fills the container's width */
+    padding: 10px; /* Add padding inside the button */
+    margin-top: 10px; /* Space above the button */
+    border: 2px solid #000; /* Black border for the button */
+    border-radius: 4px; /* Rounded corners for the button */
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Text color inside the button */
+    font-size: 16px; /* Consistent font size for the button */
+    cursor: pointer; /* Show pointer cursor on hover */
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transition for hover effects */
 }
 
+/* Styling for the button on hover */
 .contact-form-container button:hover {
-    background-color: #0056b3; /* Color de fondo al pasar el ratón */
-    border-color: #000; /* Mantener el borde negro al pasar el ratón */
+    background-color: #0056b3; /* Darker background color on hover */
+    border-color: #000; /* Keep black border on hover */
 }

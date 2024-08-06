@@ -1,40 +1,63 @@
-# Getting Started with Create React App
+# Aplicación de Clima en React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Una aplicación en React que obtiene y muestra información del clima basada en las ciudades seleccionadas por el usuario. Esta app se integra con la API de OpenWeather para proporcionar actualizaciones meteorológicas en tiempo real y soporta múltiples idiomas.
 
-## Available Scripts
+## Características
 
-In the project directory, you can run:
+- Muestra información del clima actual, incluyendo temperatura, temperaturas mínima y máxima, y descripción del clima.
+- Soporta múltiples idiomas para las descripciones del clima.
+- Permite a los usuarios seleccionar una ciudad para ver su clima.
+- Proporciona un formulario de contacto para consultas de usuarios.
 
-### `npm start`
+## Tecnologías Utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React
+- Axios
+- API de OpenWeather
+- CSS para el estilo
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Instalación
 
-### `npm test`
+Para comenzar con este proyecto, sigue estos pasos:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Clona el Repositorio**
 
-### `npm run build`
+   ```bash
+    git clone https://github.com/ERMASMASCAO/Prueba-480
+    cd react-weather-app
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Instala las dependencias**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    Asegúrate de tener npm instalado. Luego, ejecuta: npm install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Configura las Variables de Entorno**
 
-### `npm run eject`
+    Crea un archivo .env en el directorio raíz del proyecto con el siguiente contenido: REACT_APP_OPENWEATHER_API_KEY=tu_clave_api_de_openweather_aqui
+    Reemplaza tu_clave_api_de_openweather_aqui con tu clave API real de OpenWeather.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. **Inicia el Servidor de Desarrollo**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    npm start
+    Esto iniciará el servidor de desarrollo y abrirá la aplicación en tu navegador web predeterminado.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+5. **Uso**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    - Seleccionar una Ciudad: Usa la barra lateral para elegir una ciudad de las opciones disponibles. La información del clima para la ciudad seleccionada se mostrará.
+    - Cambiar Idioma: Usa el selector de idioma en la barra lateral para cambiar entre inglés y español.
+    - Formulario de Contacto: Navega al formulario de contacto a través del enlace en la barra lateral para enviar consultas.
+
+6. **Estructura de Carpetas**
+
+    - Estructura de Carpetas
+       - src/ - Directorio de código fuente
+       - components/ - Contiene componentes de React como ContactForm, Sidebar y Weather.
+       - context/ - Contiene proveedores de contexto como LanguageContext.
+       - App.js - Componente principal de la aplicación.
+       - index.js - Punto de entrada para la aplicación React.
+       - index.css - Estilos globales.
+    - .env - Archivo de variables de entorno (no se debe incluir en el control de versiones).
+    - package.json - Metadatos del proyecto y dependencias.
+
+7. **Pruebas**
+
+    Para ejecutar las pruebas, utiliza el siguiente comando: npm test

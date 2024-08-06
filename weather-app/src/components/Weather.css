@@ -1,47 +1,53 @@
+/* Styles for the weather container */
 .weather-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #f0f8ff; /* Color de fondo similar al cielo */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 300px;
-    margin: 20px; /* Espaciado alrededor del contenedor */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Arrange children elements in a column */
+  align-items: center; /* Center children elements horizontally */
+  background: #f0f8ff; /* Light blue background color */
+  border-radius: 10px; /* Rounded corners for the container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a 3D effect */
+  padding: 20px; /* Padding inside the container */
+  width: 300px; /* Fixed width for the container */
+  margin: 20px; /* Margin around the container */
+}
+
+/* Styles for the heading inside the weather container */
+.weather-container h2 {
+  color: #1e90ff; /* Dodger blue color for the heading */
+  margin-bottom: 15px; /* Space below the heading */
+}
+
+/* Styles for paragraph text inside the weather container */
+.weather-container p {
+  color: #333; /* Dark gray color for the text */
+  font-size: 16px; /* Font size for the text */
+  margin: 5px 0; /* Vertical margins for spacing between paragraphs */
+}
+
+/* Styles for the weather icon inside the weather container */
+.weather-container img {
+  width: 80px; /* Fixed width for the image */
+  height: 80px; /* Fixed height for the image */
+  margin-top: 10px; /* Space above the image */
+}
+
+/* Styles for the temperature text inside the weather container */
+.weather-container .temperature {
+  font-size: 24px; /* Larger font size for the temperature */
+  font-weight: bold; /* Bold font for emphasis */
+  color: #ff4500; /* Orange red color for the temperature */
+}
+
+/* Styles for the weather description text inside the weather container */
+.weather-container .description {
+  color: #4682b4; /* Steel blue color for the description */
+  font-style: italic; /* Italicize the description text */
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 600px) {
+  .weather-container {
+      width: 90%; /* Make the container width 90% of the viewport */
+      padding: 15px; /* Reduce padding inside the container */
   }
-  
-  .weather-container h2 {
-    color: #1e90ff; /* Azul cielo */
-    margin-bottom: 15px;
-  }
-  
-  .weather-container p {
-    color: #333; /* Texto oscuro para contraste */
-    font-size: 16px;
-    margin: 5px 0;
-  }
-  
-  .weather-container img {
-    width: 80px;
-    height: 80px;
-    margin-top: 10px;
-  }
-  
-  .weather-container .temperature {
-    font-size: 24px;
-    font-weight: bold;
-    color: #ff4500; /* Naranja para temperaturas cálidas */
-  }
-  
-  .weather-container .description {
-    color: #4682b4; /* Azul para la descripción */
-    font-style: italic;
-  }
-  
-  @media (max-width: 600px) {
-    .weather-container {
-      width: 90%;
-      padding: 15px;
-    }
-  }
-  
+}

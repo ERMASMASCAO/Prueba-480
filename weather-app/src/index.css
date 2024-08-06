@@ -1,13 +1,17 @@
+/* Global Styles */
+
+/* Styles applied to the entire document body */
 body {
-  margin: 0;
+  margin: 0; /* Remove default margin around the body element */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    sans-serif; /* Use a system font stack for better performance and consistent appearance */
+  -webkit-font-smoothing: antialiased; /* Improve font rendering on WebKit browsers (e.g., Safari) */
+  -moz-osx-font-smoothing: grayscale; /* Improve font rendering on Mozilla browsers (e.g., Firefox) */
 }
 
+/* Styles applied to code elements */
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    monospace; /* Use a monospaced font stack for code elements for better readability */
 }

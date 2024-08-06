@@ -1,86 +1,98 @@
+/* Styles for the sidebar container */
 .sidebar {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 250px;
-    height: 100%;
-    padding: 20px;
-    border-left: 2px solid #ddd;
-    background-color: #f4f4f4;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .language-selector {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-  }
-  
-  .language {
-    flex: 1;
-    margin: 0 5px;
-    padding: 10px;
-    border: 2px solid #007bff;
-    border-radius: 8px;
-    background-color: #fff;
-    color: #007bff;
-    cursor: pointer;
-    text-align: center;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  
-  .language:hover {
-    background-color: #007bff;
-    color: #fff;
-  }
-  
-  .selected-language {
-    background-color: #007bff;
-    color: #fff;
-    border: 2px solid #007bff;
-  }
-  
-  .sidebar h3 {
-    margin: 0;
-    margin-bottom: 10px;
-    font-size: 18px;
-    color: #333;
-  }
-  
-  .sidebar button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0;
-    border: none;
-    border-radius: 8px;
-    background-color: #007bff;
-    color: #fff;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s;
-  }
-  
-  .sidebar button:hover {
-    background-color: #0056b3;
-  }
-  
-  .sidebar a {
-    display: block;
-    margin-top: 20px;
-    padding: 10px;
-    text-align: center;
-    background-color: #28a745;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 8px;
-    font-size: 16px;
-    transition: background-color 0.3s;
-  }
-  
-  .sidebar a:hover {
-    background-color: #218838;
-  }
-  
+    position: fixed; /* Fix the sidebar to a specific position on the screen */
+    top: 0; /* Align the sidebar to the top of the viewport */
+    right: 0; /* Align the sidebar to the right side of the viewport */
+    width: 200px; /* Set the width of the sidebar */
+    padding: 10px; /* Add padding inside the sidebar */
+    border-left: 1px solid #ddd; /* Add a light gray left border */
+    background-color: #f9f9f9; /* Light gray background color */
+}
+
+/* Styles for the language selector container */
+.language-selector {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange child elements in a column */
+    margin-bottom: 10px; /* Add space below the language selector */
+}
+
+/* Styles for individual language options */
+.language {
+    margin: 5px 0; /* Add vertical margin between language options */
+    padding: 5px 10px; /* Add padding inside each language option */
+    border: 2px solid #ccc; /* Light gray border for language options */
+    border-radius: 4px; /* Rounded corners for language options */
+    background-color: #fff; /* White background color */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Styles for language options on hover */
+.language:hover {
+    background-color: #f0f0f0; /* Slightly darker background on hover */
+    border-color: #bbb; /* Darker border color on hover */
+}
+
+/* Styles for the selected language option */
+.selected-language {
+    margin: 5px 0; /* Add vertical margin between language options */
+    padding: 5px 10px; /* Add padding inside the selected language option */
+    border: 2px solid #000; /* Black border for the selected language */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #007bff; /* Blue background color for the selected language */
+    color: #fff; /* White text color */
+    cursor: pointer; /* Change cursor to pointer */
+    font-weight: bold; /* Bold text for the selected language */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+}
+
+/* Styles for the selected language option on hover */
+.selected-language:hover {
+    background-color: #0056b3; /* Darker blue background on hover */
+    border-color: #000; /* Keep the black border on hover */
+}
+
+/* Styles for the sidebar headings */
+.sidebar h3 {
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+/* Styles for buttons in the sidebar */
+.sidebar button {
+    display: block; /* Make the button take up the full width */
+    width: 100%; /* Ensure the button fills the container's width */
+    padding: 10px; /* Add padding inside the button */
+    margin: 5px 0; /* Add vertical margin between buttons */
+    border: 2px solid #000; /* Black border for the button */
+    border-radius: 4px; /* Rounded corners for the button */
+    background-color: #007bff; /* Blue background color for the button */
+    color: #fff; /* White text color */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    font-size: 16px; /* Consistent font size for the button */
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Styles for buttons on hover */
+.sidebar button:hover {
+    background-color: #0056b3; /* Darker blue background on hover */
+    border-color: #000; /* Keep the black border on hover */
+}
+
+/* Styles for links in the sidebar */
+.sidebar a {
+    display: block; /* Make the link take up the full width */
+    margin-top: 10px; /* Space above the link */
+    text-align: center; /* Center the link text */
+    padding: 10px; /* Add padding inside the link */
+    border: 2px solid #000; /* Black border for the link */
+    border-radius: 4px; /* Rounded corners for the link */
+    color: #007bff; /* Blue text color */
+    text-decoration: none; /* Remove underline from the link */
+    transition: color 0.3s, border-color 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Styles for links on hover */
+.sidebar a:hover {
+    color: #0056b3; /* Darker blue text color on hover */
+    border-color: #000; /* Keep the black border on hover */
+}
