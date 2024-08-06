@@ -1,63 +1,62 @@
-# Aplicación de Clima en React
+# React Weather App
 
-Una aplicación en React que obtiene y muestra información del clima basada en las ciudades seleccionadas por el usuario. Esta app se integra con la API de OpenWeather para proporcionar actualizaciones meteorológicas en tiempo real y soporta múltiples idiomas.
+A React application that fetches and displays weather information based on cities selected by the user. This app integrates with the OpenWeather API to provide real-time weather updates and supports multiple languages.
 
-## Características
+## Features
 
-- Muestra información del clima actual, incluyendo temperatura, temperaturas mínima y máxima, y descripción del clima.
-- Soporta múltiples idiomas para las descripciones del clima.
-- Permite a los usuarios seleccionar una ciudad para ver su clima.
-- Proporciona un formulario de contacto para consultas de usuarios.
+- Displays current weather information, including temperature, minimum and maximum temperatures, and weather description.
+- Supports multiple languages for weather descriptions.
+- Allows users to select a city to view its weather.
+- Provides a contact form for user inquiries.
 
-## Tecnologías Utilizadas
+## Technologies Used
 
 - React
 - Axios
-- API de OpenWeather
-- CSS para el estilo
+- OpenWeather API
+- CSS for styling
 
-## Instalación
+## Installation
 
-Para comenzar con este proyecto, sigue estos pasos:
+To get started with this project, follow these steps:
 
-1. **Clona el Repositorio**
+1. **Clone the Repository**
 
    ```bash
     git clone https://github.com/ERMASMASCAO/Prueba-480
     cd react-weather-app
 
-2. **Instala las dependencias**
+2. **Install Dependencies**
 
-    Asegúrate de tener npm instalado. Luego, ejecuta: npm install
+    Make sure you have npm installed. Then, run: npm install
 
-3. **Configura las Variables de Entorno**
+3. **Configure Environment Variables**
 
-    Crea un archivo .env en el directorio raíz del proyecto con el siguiente contenido: REACT_APP_OPENWEATHER_API_KEY=tu_clave_api_de_openweather_aqui
-    Reemplaza tu_clave_api_de_openweather_aqui con tu clave API real de OpenWeather.
+    Create a .env file in the root directory of the project with the following content: REACT_APP_OPENWEATHER_API_KEY=your_openweather_api_key_here
+    Replace your_openweather_api_key_here with your actual OpenWeather API key.
 
-4. **Inicia el Servidor de Desarrollo**
+4. **Start the Development Server**
 
     npm start
-    Esto iniciará el servidor de desarrollo y abrirá la aplicación en tu navegador web predeterminado.
+    This will start the development server and open the application in your default web browser.
 
-5. **Uso**
+5. **Usage**
 
-    - Seleccionar una Ciudad: Usa la barra lateral para elegir una ciudad de las opciones disponibles. La información del clima para la ciudad seleccionada se mostrará.
-    - Cambiar Idioma: Usa el selector de idioma en la barra lateral para cambiar entre inglés y español.
-    - Formulario de Contacto: Navega al formulario de contacto a través del enlace en la barra lateral para enviar consultas.
+    - Select a City: Use the sidebar to choose a city from the available options. The weather information for the selected city will be displayed.
+    - Change Language: Use the language selector in the sidebar to switch between English and Spanish.
+    - Contact Form: Navigate to the contact form via the link in the sidebar to submit inquiries.
 
-6. **Estructura de Carpetas**
+6. **Folder Structure**
 
-    - Estructura de Carpetas
-       - src/ - Directorio de código fuente
-       - components/ - Contiene componentes de React como ContactForm, Sidebar y Weather.
-       - context/ - Contiene proveedores de contexto como LanguageContext.
-       - App.js - Componente principal de la aplicación.
-       - index.js - Punto de entrada para la aplicación React.
-       - index.css - Estilos globales.
-    - .env - Archivo de variables de entorno (no se debe incluir en el control de versiones).
-    - package.json - Metadatos del proyecto y dependencias.
+    - src/ - Source code directory
+        - components/ - Contains React components such as ContactForm, Sidebar, and Weather.
+        - context/ - Contains context providers like LanguageContext.
+        - App.js - Main component of the application.
+        - index.js - Entry point for the React application.
+        - index.css - Global styles.
+    - .env - Environment variables file (should not be included in version control).
+    - package.json - Project metadata and dependencies.
 
-7. **Pruebas**
+7. **Testing**
 
-    Para ejecutar las pruebas, utiliza el siguiente comando: npm test
+    To run tests, use the following command: npm test
